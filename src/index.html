@@ -11,18 +11,25 @@
   </head>
   <body>
     
-    <div class="wrapper">
+    <div class="slider" id="main-slider">
+
+      <div class="slider__wrapper">
+        <div class="slide" id="slide-1" data-image="http://lorempixel.com/1024/400/animals"></div>
+        <div class="slide" id="slide-2" data-image="http://lorempixel.com/1024/400/business"></div>
+        <div class="slide" id="slide-3" data-image="http://lorempixel.com/1024/400/city"></div>
+      </div>
       
-        <h1>Simple Pure JavaScript Full Image Slider</h1>
-        
-        <div class="slider">
-        	<img src="https://images.unsplash.com/photo-1448960968772-b63b3f40dfc1?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375" alt="" />
-        	<img src="https://images.unsplash.com/photo-1449177009399-be6867ef0505?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375" alt="" />
-        	<img src="https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375" alt="" />
-          <button class="prev">&#60;</button>
-          <button class="next">&#62;</button>
-       </div>
-      
+      <div class="slider__nav">
+        <button class="slider__nav--prev">Previous</button>
+        <button class="slider__nav--next">Next</button>
+      </div>
+
+      <div class="slider__pagination">
+        <a href="#slide-1" class="is-current">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+      </div>
+
     </div>
 
     <script type="text/javascript" src="fullSlider.js" ></script>
